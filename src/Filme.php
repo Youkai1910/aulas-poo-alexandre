@@ -12,6 +12,7 @@ class Filme
     //Métodos: comportamentos (funções)
     public function ehClassico()
     {
-      
+      // É clássico SE ano for menor que 2000
+      return $this->ano < 2000;
     }
 }
