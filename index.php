@@ -47,15 +47,15 @@ $filmes = [$filme1, $filme2, $filme3];
 
             <?php foreach ($filmes as $filme): ?>
 
-            <article class="card-filme">
-                <span class="genero"> <?= $filme->genero ?> </span>
-                <h2> <?= $filme->titulo ?> </h2>
-                <p class="ano">Lancamento: <?= $filme->ano ?> </p>
+                <article class="card-filme">
+                    <span class="genero"> <?= $filme->genero ?> </span>
+                    <h2> <?= $filme->titulo ?> </h2>
+                    <p class="ano">Lancamento: <?= $filme->ano ?> </p>
 
-                <?php if( $filme->ehClassico() ): ?>
-                         <span class="classico">Clássico</span>
-                <?php endif; ?>
-            </article>
+                    <?php if ($filme->ehClassico()): ?>
+                        <span class="classico">Clássico</span>
+                    <?php endif; ?>
+                </article>
 
             <?php endforeach; ?>
 
@@ -66,7 +66,10 @@ $filmes = [$filme1, $filme2, $filme3];
         <div class="assuntos-estudados">
             <h2>Assuntos estudados</h2>
             <ul>
-
+                <li>Classes e Objetos</li>
+                <li>Propriedades e métodos</li>
+                <li>Tipos de dados</li>
+                <li>Uso do <code>$this</code> para acessar recursos de dentro da própria classe</li>
             </ul>
         </div>
 
