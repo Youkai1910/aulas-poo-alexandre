@@ -1,3 +1,14 @@
+<?php
+// Importando a class
+require_once "src/Filme.php";
+
+// Criando um Objeto ou Instância a partir da classe Filme
+$filme1 = new Filme();
+
+echo "<prev>";
+var_dump($filme1);
+echo "</prev>"
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
