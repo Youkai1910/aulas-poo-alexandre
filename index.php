@@ -66,10 +66,7 @@ $filmes = [$filme1, $filme2, $filme3];
         <div class="assuntos-estudados">
             <h2>Assuntos estudados</h2>
             <ul>
-                <li>Classes e Objetos</li>
-                <li>Propriedades e métodos</li>
-                <li>Tipos de dados</li>
-                <li>Uso do <code>$this</code> para acessar recursos de dentro da própria classe</li>
+              
             </ul>
         </div>
 
