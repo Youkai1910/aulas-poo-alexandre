@@ -6,6 +6,8 @@ Os assuntos e exemplos estão divididos por `branches`,
 acessiveis pelo menu de branches no Github.
 
 ---
+## Branch 02: Visibilidade e Encapsulamento
+---
 ## Branch 01: Classes, Objetos, Propiedades e Métodos<li>Classes e Objetos</li>
 
 - Propriedades e métodos
