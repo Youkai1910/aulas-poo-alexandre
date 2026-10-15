@@ -7,6 +7,10 @@ acessiveis pelo menu de branches no Github.
 
 ---
 ## Branch 02: Visibilidade e Encapsulamento
+Visibilidade de propriedades: public e private
+Encapsulamento
+Métodos Getters para leitura
+Métodos Setters para escrita
 ---
 ## Branch 01: Classes, Objetos, Propiedades e Métodos<li>Classes e Objetos</li>
 
