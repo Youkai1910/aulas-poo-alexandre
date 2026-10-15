@@ -4,15 +4,35 @@
 class Filme
 {
 
-    public string $titulo;
-    public string $genero;
-    public int $ano;
-    public string $direcao;
-
-    
+    private string $titulo;
+    private string $genero;
+    private int $ano;
+   
     public function ehClassico()
     {
       
       return $this->ano < 2000;
+    }
+    /* Métodos getters: permitem ACESSO/LEITURA (ler dados) */
+    public function getTitulo(): string {
+        return $this->titulo;
+    }
+    public function getGenero(): string {
+             return $this->genero;
+    }
+    public function getANO(): int {
+             return $this->ano;
+    }
+
+    /* Métodos setters: permitem ACESSO/ESCRITA (colocar dados)*/
+    /*Setters recebem através de parâmetros os dados a seremcolocados nas propriedades */
+    public function setTitulo(string $titulo): void{
+        $this->titulo = $titulo;
+    }
+    public function setGenero(string $genero): void{
+        $this->genero = $genero;
+    }
+    public function setAno(int $ano): void {
+             $this->ano = $ano;
     }
 }
