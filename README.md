@@ -16,4 +16,4 @@ Métodos Setters para escrita
 
 - Propriedades e métodos
 - Tipos de dados
-- Uso do $this para acessar recursos de dentro da própria classe
+- Uso do $this para acessar recursos de dentro da própria classe 

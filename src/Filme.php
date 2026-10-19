@@ -33,6 +33,7 @@ class Filme
         $this->genero = $genero;
     }
     public function setAno(int $ano): void {
-             $this->ano = $ano;
+            if($ano > 0){       
+             $this->ano = $ano;}
     }
 }
