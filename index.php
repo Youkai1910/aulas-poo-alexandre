@@ -56,7 +56,7 @@ $filmes = [$filme1, $filme2, $filme3];
             <h2>Assuntos estudados</h2>
             <ul>
                 <li>Finalidade do construtor</li>
-                <li>Implementação do método <b> __ construct</b></li>
+                <li>Implementação do método <b> __construct</b></li>
                 <li>Parâmetros/argumentos do construtor</li>
                 <li>Passagem de dados/valores ao criar objetos</li>
                 <li>Atribuição de valores para as propriedades usando o construtor</li>
