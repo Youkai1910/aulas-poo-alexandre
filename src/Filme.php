@@ -1,5 +1,4 @@
 <?php
-// src/Filme.php
 
 class Filme
 {
@@ -13,7 +12,7 @@ class Filme
       
       return $this->ano < 2000;
     }
-    /* Métodos getters: permitem ACESSO/LEITURA (ler dados) */
+   
     public function getTitulo(): string {
         return $this->titulo;
     }
@@ -24,8 +23,6 @@ class Filme
              return $this->ano;
     }
 
-    /* Métodos setters: permitem ACESSO/ESCRITA (colocar dados)*/
-    /*Setters recebem através de parâmetros os dados a seremcolocados nas propriedades */
     public function setTitulo(string $titulo): void{
         $this->titulo = $titulo;
     }
