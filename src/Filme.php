@@ -23,7 +23,6 @@ class Filme
 
     public function ehClassico(): bool
     {
-      
       return $this->ano < 2000;
     }
    
