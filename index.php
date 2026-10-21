@@ -11,10 +11,10 @@ require_once "src/Serie.php";
 $serie1 = new Serie("Breaking Bad", "Drama", 2008, 5);
 $serie2 = new Serie("Stranger Things", "Ficção Científica", 2016, 4);
 
-echo "<pre>"; 
-var_dump($serie1);
-var_dump($serie2);
-echo "</pre>";
+//echo "<pre>"; 
+//var_dump($serie1);
+//var_dump($serie2);
+//echo "</pre>";
 
 $filme1 = new Filme('De Volta para o Futuro', 'Ficção', 1985, 116);
 
