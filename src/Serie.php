@@ -17,5 +17,10 @@ public function __construct(string $titulo, string $genero, int $ano, int $tempo
 
     $this->temporadas = $temporadas;
 }
-
+public function getTemporadas():int {
+    return $this->temporadas;
+}
+public function setTemporadas(int $temporadas): void {
+     $this->temporadas = $temporadas;
+}
 }
