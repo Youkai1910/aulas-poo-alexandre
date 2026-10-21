@@ -56,6 +56,8 @@ $filmes = [$filme1, $filme2, $filme3];
                     <h2> <?= $filme->getTitulo() ?> </h2>
                     <p class="ano">Lancamento: <?= $filme->getANO() ?> </p>
 
+                    <p><?= $filme->getDescricao() ?></p>
+
                     <?php if ($filme->ehClassico()): ?>
                         <span class="classico">Clássico</span>
                     <?php endif; ?>
@@ -72,6 +74,9 @@ $filmes = [$filme1, $filme2, $filme3];
                     <span class="genero"><?= $serie->getGenero() ?></span>
                     <h2><?= $serie->getTitulo() ?></h2>
                     <p class="ano">Lançamento: <?= $serie->getANO() ?></p>
+
+                    <p><?= $serie->getDescricao() ?></p>
+
                     <?php if ($serie->ehClassico()): ?>
                         <span class="classico">Clássico</span>
                     <?php endif; ?>
