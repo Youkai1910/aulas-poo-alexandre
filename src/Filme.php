@@ -15,7 +15,7 @@ class Filme extends Conteudo
         /* Chamamos o construtor da superclasse (classe pai) usando
         parent :: _construct(). Isso é necessário pois estes valores
         pertecem às propriedades da classe pai. */
-        parent::__construct($titulo, $genero, $ano,);
+        parent::__construct($titulo, $genero, $ano);
 
         // Já quanto à duração, fazemos a atribuição aqui mesmo (afinal, $duração é de Filme)
         $this->duracao = $duracao;
