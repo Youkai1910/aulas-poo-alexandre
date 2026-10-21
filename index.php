@@ -11,6 +11,8 @@ require_once "src/Serie.php";
 $serie1 = new Serie("Breaking Bad", "Drama", 2008, 5);
 $serie2 = new Serie("Stranger Things", "Ficção Científica", 2016, 4);
 
+$series = [$serie1, $serie2];
+
 //echo "<pre>"; 
 //var_dump($serie1);
 //var_dump($serie2);
@@ -64,11 +66,23 @@ $filmes = [$filme1, $filme2, $filme3];
         </div>
 
         <hr>
+        <div class="series">
+            <?php foreach ($series as $serie): ?>
+                <article class="card-serie">
+                    <span class="genero"><?= $serie->getGenero() ?></span>
+                    <h2><?= $serie->getTitulo() ?></h2>
+                    <p class="ano">Lançamento: <?= $serie->getANO() ?></p>
+                    <?php if ($serie->ehClassico()): ?>
+                        <span class="classico">Clássico</span>
+                    <?php endif; ?>
+                </article>
+            <?php endforeach; ?>
+        </div>
 
         <div class="assuntos-estudados">
             <h2>Assuntos estudados</h2>
             <ul>
-               
+
             </ul>
         </div>
 
