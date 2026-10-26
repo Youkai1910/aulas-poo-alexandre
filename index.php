@@ -27,11 +27,14 @@ $filme3 = new Filme('Homem Aranha', 'Ação', 2026, 145);
 //echo "<prev>";
 //var_dump($filme1, $filme2, $filme3);
 //echo "</prev>";
-$filmes = [$filme1, $filme2, $filme3];
+
 
 /* Como a classe Conteudo foi definida como abstrata, a linha abaixo não funcionará pois não é possivel criar objetos / insntancias diretamente a partir de classes abstratas. */
 //$conteudo = new Conteudo('Senhor dos aneis', 'Fantasia', 2001);
 //var_dump($conteudo);
+
+// Lista com objetos filmes e series
+$conteudos = [$filme1, $filme2, $serie1, $serie2];
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -39,7 +42,7 @@ $filmes = [$filme1, $filme2, $filme3];
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Coleção de Filmes</title>
+    <title>Minha Coleção de Filmes e Séries</title>
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 
@@ -47,45 +50,30 @@ $filmes = [$filme1, $filme2, $filme3];
     <div class="container">
         <header>
             <p class="destaque">Uma sessão de boas histórias</p>
-            <h1>Minha coleção de filmes</h1>
+            <h1>Minha coleção de filmes e séries</h1>
             <p>Três filmes para descobrir, rever e se divertir</p>
         </header>
 
-        <div class="filmes">
+        <div class="conteudos">
 
-            <?php foreach ($filmes as $filme): ?>
+            <?php foreach ($conteudos as $conteudo): ?>
 
-                <article class="card-filme">
-                    <span class="genero"> <?= $filme->getGenero() ?> </span>
-                    <h2> <?= $filme->getTitulo() ?> </h2>
-                    <p class="ano">Lancamento: <?= $filme->getANO() ?> </p>
+                <article class="card-conteudo">
+                    <span class="genero"> <?= $conteudo->getGenero() ?> </span>
+                    <h2> <?= $conteudo->getTitulo() ?> </h2>
+                    <p class="ano">Lancamento: <?= $conteudo->getANO() ?> </p>
 
-                    <p><?= $filme->getDescricao() ?></p>
+                    <!-- POLIMORFISMO: a mesma chamada (getDescricao) de método,
+                    mas usando implementações diferentes -->
+                    <p><?= $conteudo->getDescricao() ?></p>
 
-                    <?php if ($filme->ehClassico()): ?>
+                    <?php if ($conteudo->ehClassico()): ?>
                         <span class="classico">Clássico</span>
                     <?php endif; ?>
                 </article>
 
             <?php endforeach; ?>
 
-        </div>
-
-        <hr>
-        <div class="series">
-            <?php foreach ($series as $serie): ?>
-                <article class="card-serie">
-                    <span class="genero"><?= $serie->getGenero() ?></span>
-                    <h2><?= $serie->getTitulo() ?></h2>
-                    <p class="ano">Lançamento: <?= $serie->getANO() ?></p>
-
-                    <p><?= $serie->getDescricao() ?></p>
-
-                    <?php if ($serie->ehClassico()): ?>
-                        <span class="classico">Clássico</span>
-                    <?php endif; ?>
-                </article>
-            <?php endforeach; ?>
         </div>
 
         <div class="assuntos-estudados">
