@@ -28,6 +28,10 @@ $filme3 = new Filme('Homem Aranha', 'Ação', 2026, 145);
 //var_dump($filme1, $filme2, $filme3);
 //echo "</prev>";
 $filmes = [$filme1, $filme2, $filme3];
+
+/* Como a classe Conteudo foi definida como abstrata, a linha abaixo não funcionará pois não é possivel criar objetos / insntancias diretamente a partir de classes abstratas. */
+//$conteudo = new Conteudo('Senhor dos aneis', 'Fantasia', 2001);
+//var_dump($conteudo);
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
