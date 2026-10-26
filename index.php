@@ -79,13 +79,13 @@ $conteudos = [$filme1, $filme2, $serie1, $serie2];
         <div class="assuntos-estudados">
             <h2>Assuntos estudados</h2>
             <ul>
-                <li>Classe-pai (superclasse): <b>Conteudo</b></li>
-                <li>Classe-filha (subclasse): <b>Filme</b> e <b>Serie</b></li>
-                <li>Herança utilizando <b>extends</b></li>
-                <li>Herança com propriedades e métodos</li>
-                <li>Visibilidade <b>protected</b> na superclasse permitindo o acesso atraves das subclasses .</li>
-                <li>Construtor da superclasse através de <b>parent ::_ construct()</b></li>
-                <li>Propriedades específicas das subclasses</li>
+                <li>Classe abstrata: <b>Conteudo</b></li>
+                <li>Impossibilidade de instanciar diretamente uma classe abstrata</li>
+                <li>Método abstrato: <b>getDescricao()</b></li>
+                <li>Obriga a implementação do método abstrato pelas classes filhas Filme e
+                    Série</li>
+                <li>Polimorfismo: a mesma chamada a <b>getDescricao()</b> utiliza a
+                    lementacao de cada classe</li>
             </ul>
         </div>
 
