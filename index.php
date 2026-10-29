@@ -57,9 +57,16 @@ $emailPedido3 = $notificadorPorEmail->enviar("Seu pedido 456asd foi confirmado!"
                 <p> </p>
             </article>
 
-
         </div>
-
+        <hr>
+        <section class="card-conteudo">
+            <h2>Resumo/Total dos envios de notificações</h2>
+            <!-- Note abaixo o acesso do método estático ATRAVÉS da classe
+              e com o uso do operador :: (resolução de escopo) -->
+            <p>E-mails enviados: <b> <?= NotificadorEmail::getQuantidadeEnviada() ?> </b> </p>
+            <p>SMS enviados: <b> <?= NotificadorSMS::getQuantidadeEnviada() ?> </b> </p>
+        </section>
+        
         <div class="assuntos-estudados">
             <h2>Assuntos estudados</h2>
             <ul>
