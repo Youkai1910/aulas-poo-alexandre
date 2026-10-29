@@ -14,6 +14,9 @@ $pedido2 = new Pedido(1002, "Beltrano", StatusPedido::Pendente);
 $pedido3 = new Pedido(1003, "José da Silva", StatusPedido::AguardandoPagamento);
 $pedido4 = new Pedido(1004, "Mônica Santos", StatusPedido::SaiuParaEntrega);
 
+//Alterando o status de acordo com as opções válidas da Enum
+$pedido3->setStatus(StatusPedido::Pago);
+
 $pedidos = [$pedido1, $pedido2, $pedido3, $pedido4];
 
 ?>
