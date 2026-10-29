@@ -42,15 +42,15 @@ $pedidos = [$pedido1, $pedido2, $pedido3, $pedido4];
             <?php foreach ($pedidos as $pedido): ?>
                 <article class="card-conteudo">
                     <h2>Pedido # <?= $pedido->getNumero() ?></h2>
-                    <p>Cliente:  <?= $pedido->getCliente() ?></p>
+                    <p>Cliente: <?= $pedido->getCliente() ?></p>
                     <p>Status:</p>
 
                     <!-- Atencao ao uso necessario do value para mostrar os valores -->
                     <b class="destaque"> <?= $pedido->getStatus()->value ?> </b>
                     </p>
 
-                  <?php    $mensagem = 'Seu pedido #'.$pedido->getNumero().' esta com o status: '.
-                    $pedido->getStatus()->value;
+                    <?php $mensagem = 'Seu pedido #' . $pedido->getNumero() . ' esta com o status: ' .
+                        $pedido->getStatus()->value;
                     ?>
                     <p><small> <?= $notificadorPorEmail->enviar($mensagem) ?></small></p>
                 </article>
@@ -60,7 +60,10 @@ $pedidos = [$pedido1, $pedido2, $pedido3, $pedido4];
         <div class="assuntos-estudados">
             <h2>Assuntos estudados</h2>
             <ul>
-
+                <li>Enumerações com um conjunto definido de opções usando <b>case</b></li>
+                <li>Casos associados a valores do tipo <b>string</b></li>
+                <li>Acesso a um caso com <b>StatusPedido::NomeDoCaso</b></li>
+                <li>Acesso ao valor/texto do caso com <b>->value</b></li>
             </ul>
         </div>
     </div>
