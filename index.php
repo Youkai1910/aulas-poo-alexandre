@@ -36,17 +36,28 @@ $pedidos = [$pedido1, $pedido2, $pedido3, $pedido4];
         </header>
 
         <div class="conteudos">
+            <?php foreach ($pedidos as $pedido): ?>
+                <article class="card-conteudo">
+                    <h2>Pedido # <?= $pedido->getNumero() ?></h2>
+                    <p>Cliente:  <?= $pedido->getCliente() ?></p>
+                    <p>Status:</p>
 
-            <article class="card-conteudo">
-               
-            </article>
+                    <!-- Atencao ao uso necessario do value para mostrar os valores -->
+                    <b class="destaque"> <?= $pedido->getStatus()->value ?> </b>
+                    </p>
 
+                  <?php    $mensagem = 'Seu pedido #'.$pedido->getNumero().' esta com o status: '.
+                    $pedido->getStatus()->value;
+                    ?>
+                    <p><small> <?= $notificadorPorEmail->enviar($mensagem) ?></small></p>
+                </article>
+            <?php endforeach; ?>
         </div>
-       
+
         <div class="assuntos-estudados">
             <h2>Assuntos estudados</h2>
             <ul>
-                
+
             </ul>
         </div>
     </div>
