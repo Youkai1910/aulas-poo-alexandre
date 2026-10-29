@@ -85,9 +85,7 @@ $notificadorPorEmailTeste3->enviar("Pedidos à espera de avaliação");
                 <li>Acesso a recursos estáticos da própria classe usando <b>self</b></li>
                 <li>Diferenca entre usar recursos estaticos de classe e recursos de objeto</li>
             </ul>
-
         </div>
-
     </div>
 </body>
 
