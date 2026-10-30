@@ -1,4 +1,7 @@
 <?php
+/* Nesta segunda forma, basta indicar o uso do recurso através do namespace */
+use App\Pedidos\Pedido;
+use App\Pedidos\StatusPedido;
 
 require_once "src/Pedidos/StatusPedido.php";
 require_once "src/Pedidos/Pedido.php";
