@@ -1,13 +1,12 @@
 <?php
 
-require_once "src/Notificador.php"; // interface (vem primeiro)
-require_once "src/NotificadorEmail.php"; // classe
+require_once "src/Pedidos/StatusPedido.php";
+require_once "src/Pedidos/Pedido.php";
+require_once "src/Notificacoes/Notificador.php"; 
+require_once "src/Notificacoes/NotificadorEmail.php"; 
 
-require_once "src/StatusPedido.php";
-require_once "src/Pedido.php";
-
-// Criando os objetos a partir das classes
-$notificadorPorEmail = new NotificadorEmail();
+// VEJA QUE NESTA PRIMEIRA FORMA, PRECISAMOS PASSAR O NOME COMPLETO DA CLASSE
+$notificadorPorEmail = new App\Notificacoes\NotificadorEmail();
 
 $pedido1 = new Pedido(1001, "Fulano", StatusPedido::Pendente);
 $pedido2 = new Pedido(1002, "Beltrano", StatusPedido::Pendente);
