@@ -1,5 +1,7 @@
 <?php
 
+namespace App\Pedidos;
+
 enum StatusPedido: string
 {
     case Pendente = "Pendente";

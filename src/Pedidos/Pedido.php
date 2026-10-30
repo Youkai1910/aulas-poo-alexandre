@@ -1,5 +1,7 @@
 <?php
 
+namespace App\Pedidos;
+
 class Pedido
 {
     private int $numero;
