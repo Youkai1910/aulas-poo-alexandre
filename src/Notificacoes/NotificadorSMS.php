@@ -1,5 +1,6 @@
 <?php
 
+namespace App\Notificacoes;
 
 class NotificadorSMS implements Notificador
 {

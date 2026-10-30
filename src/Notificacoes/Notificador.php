@@ -1,5 +1,8 @@
 <?php
 
+//Namespace principal/raiz: App(pode ser qualquer nome)
+// Seguindo de \ e o nome do subnamespace(nome da pasta)
+namespace App\Notificacoes;
 /* A Interface define os métodos que cada classe DEVE implementar
 obrigatoriamente. Podemos dizer que Interface é como um Contrato, em
 que as assinaturas (métodos) deverão ser honradas. 
