@@ -5,14 +5,11 @@ use App\Pedidos\Pedido;
 // Repare que aqui definimos um apelido (as) para solucionar o conflito de nomes de classe
 use App\Relatorios\Pedido as RelatorioPedido;
 
-
 use App\Pedidos\StatusPedido;
 
-require_once "src/Relatorios/Pedido.php";
-require_once "src/Pedidos/StatusPedido.php";
-require_once "src/Pedidos/Pedido.php";
-require_once "src/Notificacoes/Notificador.php";
-require_once "src/Notificacoes/NotificadorEmail.php";
+/* Substituimos TODOS os requires manuais de cada arquivo (classe, interface, enum)
+por UM ÚNICO require apontando para o autoload. */
+require_once "vendor/autoload.php";
 
 // VEJA QUE NESTA PRIMEIRA FORMA, PRECISAMOS PASSAR O NOME COMPLETO DA CLASSE
 $notificadorPorEmail = new App\Notificacoes\NotificadorEmail();
