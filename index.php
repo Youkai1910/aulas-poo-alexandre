@@ -1,16 +1,18 @@
 <?php
 /* Nesta segunda forma, basta indicar o uso do recurso através do namespace */
+
 use App\Pedidos\Pedido;
 // Repare que aqui definimos um apelido (as) para solucionar o conflito de nomes de classe
 use App\Relatorios\Pedido as RelatorioPedido;
 
 
 use App\Pedidos\StatusPedido;
+
 require_once "src/Relatorios/Pedido.php";
 require_once "src/Pedidos/StatusPedido.php";
 require_once "src/Pedidos/Pedido.php";
-require_once "src/Notificacoes/Notificador.php"; 
-require_once "src/Notificacoes/NotificadorEmail.php"; 
+require_once "src/Notificacoes/Notificador.php";
+require_once "src/Notificacoes/NotificadorEmail.php";
 
 // VEJA QUE NESTA PRIMEIRA FORMA, PRECISAMOS PASSAR O NOME COMPLETO DA CLASSE
 $notificadorPorEmail = new App\Notificacoes\NotificadorEmail();
@@ -70,7 +72,15 @@ $relatorioPedido2 = new App\Relatorios\Pedido(); // também é válido usando no
         <div class="assuntos-estudados">
             <h2>Assuntos estudados</h2>
             <ul>
-                
+                <li>Reorganização dos arquivos em pastas dentro de <b>src</b></li>
+                <li>Declaração do namespace e do subnamespace em cada arquivo</li>
+                <li>Utilização do nome completo de um recurso: <b>App\Pedidos\Pedido</b></li>
+                <li>Importação do namespace com <b>use</b> para utilizar nomes simples</li>
+                <li>Criação de apelidos com <b>as</b> para solucionar conflitos de nomes</li>
+                <li>Lembrete:
+                    <b>use</b> importa namespaces;
+                    <b>require_once</b> carrega arquivos
+                </li>
             </ul>
         </div>
     </div>
